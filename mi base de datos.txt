@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS datos_estudiantes;
+USE datos_estudiantes;
+
+-- Crear la tabla "estudiante"
+CREATE TABLE IF NOT EXISTS estudiante (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL,
+    Apellido VARCHAR(255) NOT NULL,
+    Direccin VARCHAR(255) NOT NULL,
+    Edad VARCHAR(50) NOT NULL,
+    Correo VARCHAR(255) UNIQUE NOT NULL
+);
